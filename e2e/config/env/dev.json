@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://localhost:4200",
+  "privateApiUrl": "http://localhost:3000/",
+  "userName": "user",
+  "password": "password"
+}

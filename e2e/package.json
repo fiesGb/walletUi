@@ -1,0 +1,46 @@
+{
+  "name": "finUie2eTests",
+  "version": "0.0.1",
+  "description": "finUI e2e tests",
+  "main": "index.js",
+  "scripts": {
+    "pree2e": "failsafe serenityupdate webdriverupdate",
+    "webdriverupdate": "webdriver-manager update --standalone --versions.standalone 3.4.0",
+    "webdriverstart": "webdriver-manager start --standalone --versions.standalone 3.4.0",
+    "serenityupdate": "serenity update",
+    "e2e": "failsafe protractor report",
+    "protractor": "protractor protractor.conf.js --suite=$SUITE",
+    "report": "failsafe serenity deployreport",
+    "serenity": "serenity run",
+    "deployreport": "deploy_report.sh"
+  },
+  "repository": {},
+  "keywords": [
+    "serenity-js",
+    "protractor",
+    "cucumber"
+  ],
+  "author": "Marc Burkert <marc.burkert@movingimage.com>",
+  "license": "",
+  "devDependencies": {
+    "@types/chai": "4.0.0",
+    "@types/chai-as-promised": "0.0.31",
+    "@types/cucumber": "1.3.1",
+    "@types/node": "7.0.31",
+    "chai": "3.5.0",
+    "chai-as-promised": "7.0.0",
+    "chai-smoothie": "^0.3.2",
+    "cucumber": "1.3.2",
+    "glob": "7.1.2",
+    "load-json-file": "^5.0.0",
+    "npm-failsafe": "0.4.0",
+    "protractor": "5.3.2",
+    "protractor-cucumber-framework": "5.0.0",
+    "serenity-cli": "^0.7.1",
+    "serenity-js": "^1.10.13",
+    "supertest": "^3.1.0",
+    "ts-node": "3.0.6",
+    "tslint": "5.4.3",
+    "typescript": "2.4.0"
+  }
+}
